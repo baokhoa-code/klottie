@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="property_items">
+        <item>FillColor</item>
+        <item>FillOpacity</item>
+        <item>StrokeColor</item>
+        <item>StrokeOpacity</item>
+        <item>StrokeWidth</item>
+        <item>TrOpacity</item>
+        <item>TrPosition</item>
+        <item>TrRotation</item>
+        <item>TrScale</item>
+    </string-array>
+</resources>

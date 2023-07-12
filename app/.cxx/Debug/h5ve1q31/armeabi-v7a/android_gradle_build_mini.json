@@ -1,0 +1,92 @@
+{
+  "buildFiles": [
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\inc\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\vector\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\lottie\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\vector\\stb\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\vector\\pixman\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\vector\\freetype\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\Debug\\h5ve1q31\\armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\Debug\\h5ve1q31\\armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "jlottie-Debug-armeabi-v7a": {
+      "artifactName": "jlottie",
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\Debug\\h5ve1q31\\armeabi-v7a",
+        "jlottie"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\Debug\\h5ve1q31\\obj\\armeabi-v7a\\libjlottie.so",
+      "runtimeFiles": [
+        "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\Debug\\h5ve1q31\\obj\\armeabi-v7a\\librlottie.so",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\Debug\\h5ve1q31\\obj\\armeabi-v7a\\libjlz4.so",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\Debug\\h5ve1q31\\obj\\armeabi-v7a\\librlottie2gif.so"
+      ]
+    },
+    "rlottie-Debug-armeabi-v7a": {
+      "artifactName": "rlottie",
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\Debug\\h5ve1q31\\armeabi-v7a",
+        "rlottie"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\Debug\\h5ve1q31\\obj\\armeabi-v7a\\librlottie.so",
+      "runtimeFiles": []
+    },
+    "rlottie-image-loader-Debug-armeabi-v7a": {
+      "artifactName": "rlottie-image-loader",
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\Debug\\h5ve1q31\\armeabi-v7a",
+        "rlottie-image-loader"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\Debug\\h5ve1q31\\obj\\armeabi-v7a\\librlottie-image-loader.so",
+      "runtimeFiles": []
+    },
+    "jlz4-Debug-armeabi-v7a": {
+      "artifactName": "jlz4",
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\Debug\\h5ve1q31\\armeabi-v7a",
+        "jlz4"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\Debug\\h5ve1q31\\obj\\armeabi-v7a\\libjlz4.so",
+      "runtimeFiles": []
+    },
+    "rlottie2gif-Debug-armeabi-v7a": {
+      "artifactName": "rlottie2gif",
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\Debug\\h5ve1q31\\armeabi-v7a",
+        "rlottie2gif"
+      ],
+      "abi": "armeabi-v7a",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\Debug\\h5ve1q31\\obj\\armeabi-v7a\\librlottie2gif.so",
+      "runtimeFiles": []
+    }
+  }
+}

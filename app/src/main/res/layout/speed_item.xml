@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_speed1"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="-1x"
+                android:layout_marginLeft="8dp"
+                app:chipBackgroundColor="@color/bg_chip_state_list"
+                app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                app:ensureMinTouchTargetSize="true"
+                app:shapeAppearance="@style/shapeCorner" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_speed2"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="-0.5x"
+                app:chipBackgroundColor="@color/bg_chip_state_list"
+                app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                app:ensureMinTouchTargetSize="true"
+                app:shapeAppearance="@style/shapeCorner" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_speed3"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="0.5x"
+                app:chipBackgroundColor="@color/bg_chip_state_list"
+                app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                app:ensureMinTouchTargetSize="true"
+                app:shapeAppearance="@style/shapeCorner" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_speed4"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="1x"
+                app:chipBackgroundColor="@color/bg_chip_state_list"
+                app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                app:ensureMinTouchTargetSize="true"
+                app:shapeAppearance="@style/shapeCorner" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_speed5"
+                style="@style/Widget.Material3.Chip.Assist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="2x"
+                app:chipBackgroundColor="@color/bg_chip_state_list"
+                app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                app:ensureMinTouchTargetSize="true"
+                app:shapeAppearance="@style/shapeCorner" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <Button
+            android:id="@+id/btn_speed_clear"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="26sp"
+            android:layout_height="26sp"
+            android:padding="0dp"
+            app:icon="@drawable/ic_clear_change"
+            app:iconSize="24sp"
+            app:iconTint="#BFBFBF"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

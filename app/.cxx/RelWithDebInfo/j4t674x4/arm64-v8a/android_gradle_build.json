@@ -1,0 +1,105 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\inc\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\vector\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\lottie\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\vector\\stb\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\vector\\pixman\\CMakeLists.txt",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\src\\main\\cpp\\src\\vector\\freetype\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\RelWithDebInfo\\j4t674x4\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\RelWithDebInfo\\j4t674x4\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "rlottie-RelWithDebInfo-arm64-v8a": {
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\RelWithDebInfo\\j4t674x4\\arm64-v8a",
+        "rlottie"
+      ],
+      "buildType": "release",
+      "abi": "arm64-v8a",
+      "artifactName": "rlottie",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\j4t674x4\\obj\\arm64-v8a\\librlottie.so",
+      "runtimeFiles": []
+    },
+    "jlottie-RelWithDebInfo-arm64-v8a": {
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\RelWithDebInfo\\j4t674x4\\arm64-v8a",
+        "jlottie"
+      ],
+      "buildType": "release",
+      "abi": "arm64-v8a",
+      "artifactName": "jlottie",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\j4t674x4\\obj\\arm64-v8a\\libjlottie.so",
+      "runtimeFiles": [
+        "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\j4t674x4\\obj\\arm64-v8a\\librlottie.so",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\j4t674x4\\obj\\arm64-v8a\\libjlz4.so",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\j4t674x4\\obj\\arm64-v8a\\librlottie2gif.so"
+      ]
+    },
+    "rlottie2gif-RelWithDebInfo-arm64-v8a": {
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\RelWithDebInfo\\j4t674x4\\arm64-v8a",
+        "rlottie2gif"
+      ],
+      "buildType": "release",
+      "abi": "arm64-v8a",
+      "artifactName": "rlottie2gif",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\j4t674x4\\obj\\arm64-v8a\\librlottie2gif.so",
+      "runtimeFiles": []
+    },
+    "jlz4-RelWithDebInfo-arm64-v8a": {
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\RelWithDebInfo\\j4t674x4\\arm64-v8a",
+        "jlz4"
+      ],
+      "buildType": "release",
+      "abi": "arm64-v8a",
+      "artifactName": "jlz4",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\j4t674x4\\obj\\arm64-v8a\\libjlz4.so",
+      "runtimeFiles": []
+    },
+    "rlottie-image-loader-RelWithDebInfo-arm64-v8a": {
+      "buildCommandComponents": [
+        "C:\\Users\\khoa1\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\Workspace\\java\\androidLottieApp\\app\\.cxx\\RelWithDebInfo\\j4t674x4\\arm64-v8a",
+        "rlottie-image-loader"
+      ],
+      "buildType": "release",
+      "abi": "arm64-v8a",
+      "artifactName": "rlottie-image-loader",
+      "output": "E:\\Workspace\\java\\androidLottieApp\\app\\build\\intermediates\\cxx\\RelWithDebInfo\\j4t674x4\\obj\\arm64-v8a\\librlottie-image-loader.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

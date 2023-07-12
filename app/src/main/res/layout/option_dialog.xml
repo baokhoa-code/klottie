@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?attr/dialogPreferredPadding"
+    android:paddingTop="?attr/dialogPreferredPadding"
+    android:paddingEnd="?attr/dialogPreferredPadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvInfo"
+            style="?attr/textAppearanceLabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Layer (Path): BG" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="?attr/textAppearanceLabelLarge"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:labelFor="@+id/tilProperty"
+                android:text="Property" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilProperty"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                app:boxStrokeWidth="1dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/tieProperty"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="none"
+                    android:padding="0dp"
+                    android:textSize="13sp"
+                    android:textColorHint="#8D6E63"
+                    app:simpleItems="@array/property_items" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="?attr/textAppearanceLabelLarge"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:labelFor="@+id/tilMethod"
+                android:text="Color" />
+
+            <Button
+                android:id="@+id/btn_pick_color"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:shapeAppearance="@style/ShapeAppearance.Material3.SmallComponent"
+                android:padding="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorBg1"
+                android:textColor="@color/black"
+                android:text="Pick color"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llInt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvInt"
+                style="?attr/textAppearanceLabelLarge"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:labelFor="@+id/tilInt"
+                android:text="Int" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilInt"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:boxStrokeWidth="1dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieInt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:padding="0dp"
+                    android:textColorHint="#8D6E63"
+                    android:textSize="16sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFloat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFloat1"
+                style="?attr/textAppearanceLabelLarge"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:labelFor="@+id/tilFloat2"
+                android:text="Float1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFloat1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:boxStrokeWidth="1dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieFloat1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:padding="0dp"
+                    android:textSize="16sp"
+                    android:textColorHint="#8D6E63" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFloat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFloat2"
+                style="?attr/textAppearanceLabelLarge"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:labelFor="@+id/tilFloat2"
+                android:text="Float2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFloat2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:boxStrokeWidth="1dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieFloat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="numberDecimal"
+                    android:padding="0dp"
+                    android:textSize="16sp"
+                    android:textColorHint="#8D6E63" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

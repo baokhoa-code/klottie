@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LottieEditActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="6sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_close"
+            app:iconSize="24sp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_show_full"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_eye"
+            app:iconSize="24sp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.example.androidlottieapp.KLottieImageView
+        android:id="@+id/lottie_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:padding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constrainLayout_bar"
+        app:layout_constraintVertical_weight="1" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerColor="#BCB7B7"
+        app:dividerThickness="0.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/constrainLayout_bars2" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayout_bars2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rclv_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_play_stop"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_pause"
+            app:iconSize="24sp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rclv_option" />
+
+
+
+        <TextView
+            android:id="@+id/tv_currentFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:padding="0dp"
+            android:text="0"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_endFrame"
+            app:layout_constraintStart_toEndOf="@+id/btn_play_stop"
+            app:layout_constraintTop_toBottomOf="@+id/rclv_option" />
+
+        <TextView
+            android:id="@+id/tv_endFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="/ 100"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sldProgress"
+            app:layout_constraintStart_toEndOf="@+id/tv_currentFrame"
+            app:layout_constraintTop_toBottomOf="@+id/rclv_option" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sldProgress"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:stepSize="1"
+            android:valueFrom="0"
+            android:valueTo="90"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_repeat"
+            app:layout_constraintStart_toEndOf="@+id/tv_endFrame"
+            app:layout_constraintTop_toBottomOf="@+id/rclv_option"
+            app:showAnimationBehavior="outward" />
+
+        <Button
+            android:id="@+id/btn_repeat"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_repeat"
+            app:iconSize="24sp"
+            app:iconTint="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rclv_option" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerColor="#BCB7B7"
+        app:dividerThickness="0.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_list" />
+
+    <HorizontalScrollView
+        android:id="@+id/btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="6dp"
+            android:orientation="horizontal">
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_layer"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:textAlignment="center"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Layers"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:chipIcon="@drawable/ic_layer"
+                    app:shapeAppearance="@style/shapeCorner"
+                    app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:ensureMinTouchTargetSize="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_speed"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:textAlignment="center"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Speed"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:chipIcon="@drawable/ic_speed"
+                    app:shapeAppearance="@style/shapeCorner"
+                    app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:ensureMinTouchTargetSize="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_bg"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:textAlignment="center"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Background"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:chipIcon="@drawable/ic_background_color"
+                    app:shapeAppearance="@style/shapeCorner"
+                    app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:ensureMinTouchTargetSize="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_trim"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:textAlignment="center"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Trim"
+                    android:checkable="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:chipIcon="@drawable/ic_trim"
+                    app:shapeAppearance="@style/shapeCorner"
+                    app:chipStrokeColor="@color/bg_chip_state_stoke_list"
+                    app:chipBackgroundColor="@color/bg_chip_state_list"
+                    app:ensureMinTouchTargetSize="true" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
